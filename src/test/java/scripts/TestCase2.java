@@ -27,7 +27,7 @@ OpenCartOpenSourceShoppingCartSolutionPage sp=new OpenCartOpenSourceShoppingCart
 	driverutilities.scrollByJavascriptExecutor(driver, 0, 100);
 	lp.InputPinTextBox(pdata.getdata("pin"));
 	lp.ClickOnContinueButton();
-	
+	Thread.sleep(3000);
 	StoreFrontAndAdministrationDemoPage dp=new StoreFrontAndAdministrationDemoPage(driver);
 	dp.demobutton();
 	dp.viewfrontstorebutton();

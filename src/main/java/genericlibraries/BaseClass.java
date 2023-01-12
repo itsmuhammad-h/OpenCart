@@ -5,6 +5,8 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestClass;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +24,8 @@ public	PropertyFileData pdata=new PropertyFileData();  //must hve public access 
 	public void openApp() throws IOException
 	{
 		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
+	//	driver=new ChromeDriver();
+		driver=new FirefoxDriver();
 	    driver.get(pdata.getdata("url"));   // here we hve to change the return type of getdata() method  propertyFile class to String from void 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(13));
@@ -37,6 +40,7 @@ public	PropertyFileData pdata=new PropertyFileData();  //must hve public access 
 	{
  int status = res.getStatus();
  String name=res.getName();
+ 
 	if(status==2)
 	{
 		Photo p=new Photo();
@@ -44,7 +48,7 @@ public	PropertyFileData pdata=new PropertyFileData();  //must hve public access 
 		p.getphoto(driver, name);
 	}
 	Thread.sleep(2000);
-	driver.quit();
+	//driver.quit();
 	}
 
 
