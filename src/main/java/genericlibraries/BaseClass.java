@@ -24,8 +24,8 @@ public	PropertyFileData pdata=new PropertyFileData();  //must hve public access 
 	public void openApp() throws IOException
 	{
 		WebDriverManager.chromedriver().setup();
-	//	driver=new ChromeDriver();
-		driver=new FirefoxDriver();
+		driver=new ChromeDriver();
+		//driver=new FirefoxDriver();
 	    driver.get(pdata.getdata("url"));   // here we hve to change the return type of getdata() method  propertyFile class to String from void 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(13));

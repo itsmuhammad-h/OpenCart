@@ -21,7 +21,7 @@ public class YourStoreHomePage {
 	@FindBy(xpath="//li//a[text()='Laptops & Notebooks']") private WebElement laptopsnotebooksbtn;
 	
 	
-	@FindBy(xpath="//div//ul//a[text()='Show All Laptops & Notebooks']") private WebElement showalllaptopsnotebooksbtn;
+	@FindBy(xpath=" //a[text()='Show All Laptops & Notebooks']") private WebElement showalllaptopsnotebooksbtn;
 	
 	
 

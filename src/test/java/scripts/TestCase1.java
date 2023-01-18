@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 
 import org.testng.Reporter;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import genericlibraries.BaseClass;
@@ -31,7 +32,7 @@ public class TestCase1  extends BaseClass{
 //again scrolls down and clicks on contactPage &enters name,email,enquiry,clicks on submit &clicks on continue
 //once clicking on continue it will redirect to the homepage 
 	
-	
+	@Parameters({"T1"})
 	@Test
 	public void tc1() throws IOException, InterruptedException
 	{

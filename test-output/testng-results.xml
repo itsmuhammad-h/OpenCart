@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[LoginPage Navigated with expected title  ]]>
+    </line>
+    <line>
+      <![CDATA[DemoPage StoreFront&Administration Navigated with expected title  ]]>
+    </line>
+    <line>
+      <![CDATA[HomePage Navigated with expected title  ]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-01-12T10:27:43 IST" name="Default suite" finished-at="2023-01-12T10:28:55 IST" duration-ms="72500">
+  <suite started-at="2023-01-18T08:41:47 IST" name="Suite" finished-at="2023-01-18T08:43:34 IST" duration-ms="106367">
     <groups>
     </groups>
-    <test started-at="2023-01-12T10:27:43 IST" name="Default test" finished-at="2023-01-12T10:28:55 IST" duration-ms="72500">
+    <test started-at="2023-01-18T08:41:47 IST" name="Test2" finished-at="2023-01-18T08:43:30 IST" duration-ms="102868">
       <class name="scripts.TestCase2">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:scripts.TestCase2@17497425]" started-at="2023-01-12T10:27:43 IST" name="openApp" finished-at="2023-01-12T10:28:24 IST" duration-ms="41284" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:scripts.TestCase2@26d9b808]" started-at="2023-01-18T08:41:48 IST" name="openApp" finished-at="2023-01-18T08:42:44 IST" duration-ms="56648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc2()[pri:0, instance:scripts.TestCase2@17497425]" started-at="2023-01-12T10:28:24 IST" name="tc2" finished-at="2023-01-12T10:28:53 IST" duration-ms="29096" status="PASS">
+        <test-method signature="tc2()[pri:0, instance:scripts.TestCase2@26d9b808]" started-at="2023-01-18T08:42:44 IST" name="tc2" finished-at="2023-01-18T08:43:28 IST" duration-ms="43684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.TestCase2@17497425]" started-at="2023-01-12T10:28:53 IST" name="closeApp" finished-at="2023-01-12T10:28:55 IST" duration-ms="2024" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.TestCase2@26d9b808]" started-at="2023-01-18T08:43:28 IST" name="closeApp" finished-at="2023-01-18T08:43:30 IST" duration-ms="2027" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc2 status=SUCCESS method=TestCase2.tc2()[pri:0, instance:scripts.TestCase2@17497425] output={null}]]]>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=TestCase2.tc2()[pri:0, instance:scripts.TestCase2@26d9b808] output={null}]]]>
               </value>
             </param>
           </params>
@@ -27,6 +36,38 @@
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- scripts.TestCase2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test2 -->
+    <test started-at="2023-01-18T08:41:47 IST" name="Test1" finished-at="2023-01-18T08:43:34 IST" duration-ms="106367">
+      <class name="scripts.TestCase1">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:scripts.TestCase1@3e11f9e9]" started-at="2023-01-18T08:41:48 IST" name="openApp" finished-at="2023-01-18T08:42:44 IST" duration-ms="56834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc1()[pri:0, instance:scripts.TestCase1@3e11f9e9]" started-at="2023-01-18T08:42:44 IST" name="tc1" finished-at="2023-01-18T08:43:32 IST" duration-ms="47432" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[LoginPage Navigated with expected title  ]]>
+            </line>
+            <line>
+              <![CDATA[DemoPage StoreFront&Administration Navigated with expected title  ]]>
+            </line>
+            <line>
+              <![CDATA[HomePage Navigated with expected title  ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.TestCase1@3e11f9e9]" started-at="2023-01-18T08:43:32 IST" name="closeApp" finished-at="2023-01-18T08:43:34 IST" duration-ms="2008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc1 status=SUCCESS method=TestCase1.tc1()[pri:0, instance:scripts.TestCase1@3e11f9e9] output=LoginPage Navigated with expected title  ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.TestCase1 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

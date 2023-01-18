@@ -2,6 +2,7 @@ package scripts;
 
 import java.io.IOException;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import genericlibraries.BaseClass;
@@ -12,7 +13,8 @@ import pomPages.StoreFrontAndAdministrationDemoPage;
 import pomPages.YourStoreHomePage;
 
 public class TestCase2 extends BaseClass {
-
+    
+	@Parameters({"T2"})
 	@Test
 	public void tc2() throws IOException, InterruptedException
 	{
